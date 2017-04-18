@@ -1,9 +1,17 @@
-### The Spoon-Knife Repository
+### Moscow ML -- The Zinc Oxide Experiment
 
-This repository is meant to provide an example for *forking* a repository on GitHub.
+Moscow ML is getting old.  Can we modernize it?  Can we make it faster?
 
-Creating a *fork* is producing a personal copy of someone else's project. Forks act as a sort of bridge between the original repository and your personal copy. You can submit *Pull Requests* to help make other people's projects better by offering your changes up to the original project. Forking is at the core of social coding at GitHub.
+Maybe we can.  The Zinc Oxide Experiment is an attempt to do just that.
+It consists of a new VM, called ZnO, that is morally compatible with Moscow ML bytecode.
+The new VM uses a smaller and slightly simpler instruction set in order to make the code
+cleaner and smaller.  There are automatic translators from the bytecode used in many
+versions of Moscow ML.
 
-After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
+The new VM starts out as a dead simple VM so we can measure how much of a performance
+loss it is to use the simpler instructions.  My guess is, not a lot.
 
-For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
+After it is up and running with a profiler and a debugger, I expect to turn it into
+a tracing JIT to see how much faster it can get while keeping the code small and sweet.
+
+Blablabla
