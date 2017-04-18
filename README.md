@@ -3,7 +3,7 @@
 [Moscow ML](https://en.wikipedia.org/wiki/Moscow_ML) is getting old.  Can we modernize it?  Can we make it faster?
 
 Maybe we can.  The Zinc Oxide Experiment is an attempt to do just that.
-It consists of a new VM, called [ZnO](/znovm/), that is morally compatible with Moscow ML bytecode.
+It consists of a new VM, called [ZnO](znovm/), that is morally compatible with Moscow ML bytecode.
 The new VM uses a smaller and slightly simpler instruction set in order to make the code
 cleaner and smaller.  There are automatic translators from the bytecode used in many
 versions of Moscow ML.
